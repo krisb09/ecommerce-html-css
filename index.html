@@ -6,23 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bike Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@200;400;600&family=Nothing+You+Could+Do&family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">   
+    <script src="https://use.fontawesome.com/75318b546b.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+   
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo.png" alt="" width="125px">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" alt="" width="125px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="/images/shopping-cart.png" width="30px" height="30px" alt="">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Start Riding Now!</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Perspiciatis in officia soluta temporibus voluptates eaque pariatur laudantium excepturi, cum, nostrum earum at, ea quisquam eligendi.</p>
+                    <a href="" class="btn">Explore Now &#8594;</a>
+                </div>
+                 <div class="col-2">
+                     <img src="images/banner.png" alt="">
+                 </div>
+            </div>
         </div>
+    </div>
+
+    <!-- products -->
+    <div class="featured-category">
+        <div class="small-container">
+            <div class="row">
+                    <div class="col-3">
+                      <img src="/images/bikes.png" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="/images/bags.png" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="/images/helmets.png" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured products -->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="/images/product-1.png" alt="">
+                <h4>Pivot Firebird</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-half-stroke"></i>
+                </div>
+                <p>$7000.00</p>
+            </div>
+            <div class="col-4">
+                <img src="/images/product-2.png" alt="">
+                <h4>Santa Cruz Bronson</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-half-stroke"></i>
+                </div>
+                <p>$7000.00</p>
+            </div>
+        </div>
+
+        <!-- Special Sale -->
+        <div class="special-sale">
+            <div class="small-container2">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="/images/special.png" class="special-sale">
+                    </div>
+                    <div class="col-2">
+                        <h2>Limited time only!</h2>
+                        <h1>Yeti eMTB</h1>
+                        <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt libero asperiores iusto odio, harum esse omnis placeat ipsam temporibus?</small>
+                        <a href="" class="btn">But Now &#8594 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonial">
+            <div class="small-container">
+                <h2>Reviews</h2>
+                <div class="row">
+                    <div class="col-3">   
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum velit laborum porro sed cupiditate ratione.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>-Calvin Klein</h3>
+                    </div>
+                    <div class="col-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum velit laborum porro sed cupiditate ratione.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>-Hugo Boss</h3>
+                    </div>
+                    <div class="col-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum velit laborum porro sed cupiditate ratione.</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3>-John Doe</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brands -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="/images/logo-paypal.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/giant.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/specialized.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="/images/american.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <script src="https://use.fontawesome.com/daa2573e2c.js"></script> -->
     </div>
 </body>
 </html>
