@@ -18,18 +18,19 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" alt="" width="125px">
+                    <img src="images/logo.png" alt="">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
-                        <li><a href="">Products</a></li>
+                        <li><a href="/bikes-page.html">Bikes</a></li>
                         <li><a href="">About</a></li>
                         <li><a href="">Contact</a></li>
                         <li><a href="">Account</a></li>
                     </ul>
                 </nav>
-                <img src="/images/shopping-cart.png" width="30px" height="30px" alt="">
+                <img src="/images/shopping-cart.png" width="30px" height="30px" class="cart">
+                <img src="/images/menu (1).png" class="menu-icon" onclick="menuToggle()">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -66,7 +67,7 @@
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="col-4">
-                <img src="/images/product-1.png" alt="">
+                <a href="/bikes-page.html"><img src="/images/product-1.png" alt=""></a>
                 <h4>Pivot Firebird</h4>
                 <div class="rating">
                    <i class="fa fa-star"></i>
@@ -78,7 +79,7 @@
                 <p>$7000.00</p>
             </div>
             <div class="col-4">
-                <img src="/images/product-2.png" alt="">
+                <a href="/bikes-page-2.html"><img src="/images/product-2.png" alt=""></a>
                 <h4>Santa Cruz Bronson</h4>
                 <div class="rating">
                    <i class="fa fa-star"></i>
@@ -133,7 +134,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </div>
-                        <h3>-Hugo Boss</h3>
+                        <h4>-Hugo Boss</h4>
                     </div>
                     <div class="col-3">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum velit laborum porro sed cupiditate ratione.</p>
@@ -171,18 +172,99 @@
         </div>
 
 <!-- Footer -->
-        <div class="footer">
-            <div class="container">
+        <!-- <div class="footer"> -->
+            <!-- <div class="container">
                 <div class="row">
                     <div class="footer-col-1">
-                        
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and IOS.</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="/images/logo.png" width="325px" height="300px">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque molestias hic assumenda pariatur, omnis corporis.</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and IOS.</p>
+                    </div>
+                     <div class="footer-col-3">
+                        <h3>Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                     <div class="footer-col-2">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
 
 
         <!-- <script src="https://use.fontawesome.com/daa2573e2c.js"></script> -->
     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col-1">
+                   <h3>Download Our App</h3>
+                   <p>Download App for Android and IOS.</p>
+                   <div class="app-logo">
+                       <img src="/images/play-store.png">
+                       <img src="/images/app-store.png">
+                   </div>
+               </div>
+                 <div class="footer-col-2">
+                   <img src="/images/bike shop-logos_white.png" alt="">
+                   
+               </div>
+               <div class="footer-col-3">
+                   <h3>Links</h3>
+                   <ul>
+                       <li>Coupons</li>
+                       <li>Blog Post</li>
+                       <li>Return Policy</li>
+                       <li>Join Affiliate</li>
+                   </ul>
+               </div>
+                <div class="footer-col-4">
+                   <h3>Follow us</h3>
+                   <ul>
+                       <li>Facebook</li>
+                       <li>Twiiter</li>
+                       <li>Instagram</li>
+                       <li>Youtube</li>
+                   </ul>
+               </div>
+           </div>
+           <hr>
+           <p class="copyright">Copyright 2020</p>
+       </div>
+    </div>
+
+    <script>
+        const MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if(MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
